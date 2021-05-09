@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+    color: $negro;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover{
+        color: $blanco !important;
+    }
+}
+.hover__error{
+    &:hover{
+        color: $negro !important;
+    }
+}
+
+.active{
+    color: $blanco !important;
+}
+
+h1{
+    font-size: 38px;
+    text-align: center;
+}
+
+h2{
+    font-size: 29px;
+}
+
+
+p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.icon{
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}

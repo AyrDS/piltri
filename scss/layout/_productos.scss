@@ -1,0 +1,29 @@
+.producto{
+    .producto__imagen{
+        max-width: 40%;
+        max-height: auto;
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.7);
+        }
+        @include cel{
+            max-width: 50%;
+            max-height: auto;
+        }
+        @include tablet{
+            max-width: 45%;
+            max-height: auto;
+        }
+        @include desktop{
+            max-width: 35%;
+            max-height: auto;
+        }
+    }
+    .btn-outline-success{
+        color: $negro;
+        padding: 10px 30px;
+        &:hover{
+            background-color: $colorPrimario;
+        }
+    }
+}
