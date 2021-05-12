@@ -49,7 +49,7 @@ p {
 }
 
 .main {
-  background-image: url(../img/back.jpeg);
+  background-image: url(/img/back.jpeg);
   height: 52rem;
   background-size: cover;
   background-repeat: no-repeat;
