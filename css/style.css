@@ -48,12 +48,8 @@ p {
   max-height: auto;
 }
 
-.main {
-  background-image: url("../img/indexFondo.jpg");
+.main .imgFondo {
   height: 52rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .main .position-absolute {

@@ -45,8 +45,8 @@
                     </ul>
                     <div class="d-flex flex-row justify-content-center">
                         <a href="error.html" class="me-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="36"
-                                height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="36" height="36"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <circle cx="6" cy="19" r="2" />
@@ -70,11 +70,34 @@
         </div>
     </header>
 
-    <main class="main position-relative">
-        <div
-            class="position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center align-item-center">
-            <h1 class="text-white">¡Bienvenidos a Piltri Sustentable!</h1>
-            <p class="text-white text-center">Productos sustentables y veganos</p>
+    <main class="main">
+        <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/indexFondo.jpg" class="d-block w-100 imgFondo" alt="Fondo carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imgFondo2.jpg" class="d-block w-100 imgFondo" alt="Fondo carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imgFondo3.jpg" class="d-block w-100 imgFondo" alt="Fondo carousel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <div class="position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                <h1 class="text-white">¡Bienvenidos a Piltri Sustentable!</h1>
+                <p class="text-center text-white">Productos sustentables y veganos</p>
+            </div>
         </div>
     </main>
 
@@ -82,16 +105,21 @@
         <div class="container pt-2">
             <section class="mb-2">
                 <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp me-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp me-2"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                        <path
+                            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
                     </svg>
                 </a>
 
                 <a href="https://www.instagram.com/piltrisustentable/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram ms-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram ms-2"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <rect x="4" y="4" width="16" height="16" rx="4" />
                         <circle cx="12" cy="12" r="3" />
                         <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
@@ -101,7 +129,8 @@
         </div>
 
         <div class="text-center">
-            <p class="fs-6">Made by: <a href="https://www.linkedin.com/in/ayrds/" target="_blank" class="text-dark fs-6">Ayrton Da Silva.</a> Todos los derechos reservados. 2021&copy;</p>
+            <p class="fs-6">Made by: <a href="https://www.linkedin.com/in/ayrds/" target="_blank"
+                    class="text-dark fs-6">Ayrton Da Silva.</a> Todos los derechos reservados. 2021&copy;</p>
         </div>
     </footer>
 
