@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "nodemon": "^2.0.7",
-    "node-sass": "^5.0.0"
+    "animate.css": "^4.1.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
   },
   "devDependencies": {},
   "scripts": {
