@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 a {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #000000;
   font-size: 18px;
@@ -17,39 +19,8 @@ a:hover {
   color: #fff !important;
 }
 
-@keyframes hvr-bob {
-  0% {
-    transform: translateY(-8px);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-  100% {
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob-float {
-  100% {
-    transform: translateY(-8px);
-  }
-}
-
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
-  animation-name: hvr-bob-float, hvr-bob;
-  animation-duration: .3s, 1.5s;
-  animation-delay: 0s, .3s;
-  animation-timing-function: ease-out, ease-in-out;
-  animation-iteration-count: 1, infinite;
-  animation-fill-mode: forwards;
-  animation-direction: normal, alternate;
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -64,6 +35,7 @@ h2 {
 p {
   font-size: 20px;
   margin: 0;
+  font-family: 'Lora', serif;
 }
 
 .icon {
@@ -147,6 +119,14 @@ p {
 .nosotros__img {
   max-width: 90%;
   max-height: auto;
+}
+
+.nst__icon {
+  transition: all .5s;
+}
+
+.nst__icon:hover {
+  transform: translateY(-10px);
 }
 
 .main .img__contacto {

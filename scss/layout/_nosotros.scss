@@ -2,3 +2,10 @@
     max-width: 90%;
     max-height: auto;
 }
+.nst__icon{
+    transition: all .5s;
+
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
