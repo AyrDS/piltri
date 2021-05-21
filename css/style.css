@@ -130,7 +130,7 @@ p {
 }
 
 .main .img__contacto {
-  max-height: 35rem;
+  max-height: 30rem;
   max-width: auto;
 }
 
@@ -138,21 +138,6 @@ p {
   .main .img__contacto {
     max-height: 40rem;
     max-width: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .contenedor__contacto {
-    position: relative;
-  }
-  .contenedor__contacto .formulario__contacto {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
