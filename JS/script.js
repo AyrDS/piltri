@@ -35,6 +35,7 @@ function enterProduct() {
 /* PROGRAMA */
 const products = [];
 let [product, price] = enterProduct();
+
 products.push(new Product(product, price));
 
 for (const product of products) {
