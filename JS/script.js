@@ -1,23 +1,42 @@
-function Producto (nombre, precio, cantidad){
-    this.nombre = nombre.toUpperCase();
-    this.precio = precio;
-    this.cantidad = cantidad;
+/* FUNCIONES */
+function Product(name, price) {
+    this.name = name;
+    this.price = price;
 
-    this.total = function (){
-        this.precio = (this.precio*1.21) * this.cantidad;
-        alert("Nombre: " + this.nombre + "\nCantidad: " + this.cantidad + "\nTotal a pagar con IVA incluido: " + this.precio);
+    this.iva = function () {
+        this.price = this.price * 1.21;
+        alert('Producto: ' + this.name + "\nPrecio total con impuestos: " + this.price);
     }
 }
-let nombre = prompt("Hola, ingrese nombre del producto que quiera comprar");
-let precio = parseFloat(prompt("Ingrese precio"));
-while(precio <= 0){
-    precio = parseFloat(prompt("El precio debe ser mayor a 0"));
-}
-let cant = parseInt(prompt("Ingrese cantidad"));
-while(cant <= 0){
-    cant = parseInt(prompt("La cantidad debe ser mayor a 0"));
+
+function enterProduct() {
+    let price;
+    let product = prompt("Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
+    while (product != "1" && product != "2" && product != "3") {
+        product = prompt("OPCIÓN INCORRECTA. Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
+    }
+    switch (product) {
+        case "1":
+            product = "SHAMPOO";
+            price = 200;
+            break;
+        case "2":
+            product = "ACONDICIONADOR";
+            price = 200;
+            break;
+        case "3":
+            product = "JABÓN";
+            price = 100;
+            break;
+    }
+    return [product, price];
 }
 
-const producto1 = new Producto(nombre, precio, cant);
+/* PROGRAMA */
+const products = [];
+let [product, price] = enterProduct();
+products.push(new Product(product, price));
 
-producto1.total();
+for (const product of products) {
+    product.iva();
+}
