@@ -11,32 +11,32 @@ function Product(name, price) {
 
 function enterProduct() {
     let price;
-    let product = prompt("Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
-    while (product != "1" && product != "2" && product != "3") {
-        product = prompt("OPCIÓN INCORRECTA. Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
+    let userProduct = prompt("Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
+    while (userProduct != "1" && userProduct != "2" && userProduct != "3") {
+        userProduct = prompt("OPCIÓN INCORRECTA. Elija el opción númerica de acuerdo al producto que desea comprar: \n1 = SHAMPOO $200\n2 = ACONDICIONADOR $200\n3 = JABÓN $100");
     }
-    switch (product) {
+    switch (userProduct) {
         case "1":
-            product = "SHAMPOO";
+            userProduct = "SHAMPOO";
             price = 200;
             break;
         case "2":
-            product = "ACONDICIONADOR";
+            userProduct = "ACONDICIONADOR";
             price = 200;
             break;
         case "3":
-            product = "JABÓN";
+            userProduct = "JABÓN";
             price = 100;
             break;
     }
-    return [product, price];
+    return [userProduct, price];
 }
 
 /* PROGRAMA */
 const products = [];
-let [product, price] = enterProduct();
+let [userProduct, price] = enterProduct();
 
-products.push(new Product(product, price));
+products.push(new Product(userProduct, price));
 
 for (const product of products) {
     product.iva();
