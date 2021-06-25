@@ -41,3 +41,12 @@ products.push(new Product(userProduct, price));
 for (const product of products) {
     product.iva();
 }
+
+let user = prompt("Desea agregar otro producto?\n1 = SI\n2 = NO");
+if (user === "1") {
+    let [userProduct1, price1] = enterProduct();
+    products.push(new Product(userProduct1, price1));
+
+}else{
+    alert("¡Adios!");
+}
